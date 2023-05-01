@@ -558,7 +558,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 17,
+              "leftColumn": 27,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -650,7 +650,7 @@
               "key": "knoldy63t8",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 51,
+              "rightColumn": 61,
               "textSize": "0.875rem",
               "widgetId": "1qzd5y6z50",
               "minWidth": 450,
@@ -666,6 +666,67 @@
               "mobileLeftColumn": 0,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 48,
+              "widgetName": "roleDropdown",
+              "isFilterable": true,
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "Label",
+              "searchTags": [
+                "dropdown"
+              ],
+              "topRow": 41,
+              "bottomRow": 48,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": false,
+              "mobileRightColumn": 27,
+              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Query5.data))(roleDropdown.options, roleDropdown.serverSideFiltering) }}",
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 7,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "labelPosition": "Top",
+              "options": "",
+              "placeholderText": "Select option",
+              "isDisabled": false,
+              "key": "r2kinseca8",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 27,
+              "dynamicHeight": "FIXED",
+              "widgetId": "f5rh6fl92q",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 41,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 7,
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -685,6 +746,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Page1_Query5",
+              "name": "Query5",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                " roleDropdown.selectedOptionValue "
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

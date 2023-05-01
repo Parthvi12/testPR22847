@@ -3,6 +3,18 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Friends",
+      "isDefault": false
+    },
+    {
+      "id": "Friends2",
+      "isDefault": false
+    },
+    {
+      "id": "Friends3",
+      "isDefault": false
     }
   ],
   "viewMode": false,
