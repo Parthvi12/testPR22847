@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "Query5",
+    "name": "Query6",
     "datasource": {
       "name": "Untitled Datasource 4",
       "pluginId": "mssql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select * from msdb_version",
+      "body": "SELECT TOP 10 * FROM users;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Query5",
+  "id": "Page1_Query6",
   "deleted": false,
-  "gitSyncId": "644f63b16f35f11b37854261_644f88d26f35f11b378542be"
+  "gitSyncId": "644f63b16f35f11b37854261_644f9d7b6f35f11b37854442"
 }
